@@ -1,0 +1,33 @@
+/**
+* @author      Taylor Wang  <sunrise91.t3@gmail.com>
+* @copyright   Copyright (c) 2015 Taylor Wang Design
+*/
+@-webkit-keyframes cross {
+  0%,
+    7% {
+    top: 100vh;
+    right: 200vh;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+@keyframes cross {
+  0%,
+    7% {
+    top: 100vh;
+    right: 200vh;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+/* line 31, ../../sass/ch01/ch01_port.scss */
+#pi {
+  -webkit-transform: translateX(15%);
+  -ms-transform: translateX(15%);
+  transform: translateX(15%);
+  right: 200%;
+}

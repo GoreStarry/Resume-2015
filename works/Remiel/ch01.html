@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <title>Thrill.雷米爾 Chapter.01</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1">
+    <meta name="author" content="王偉泰(Gore Wang)">
+    <meta name="copyright" content="Thrill.T3">
+    <meta name="keywords" content="Thrill,三光s吼,小說,novel">
+    <meta name="description" content="當璀璨的未來與自身一同粉碎，世界必定無法再同過去那般耀眼時...  故事就此開始">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:title" content="Thrill.雷米爾.Ch01">
+    <!--    <meta property="og:url" content="http://hermajesty.esy.es">-->
+    <meta property="og:image" content="http://thrill-t3.com/Remiel/fbRemiel.jpg">
+    <meta property="og:description" content="當璀璨的未來與自身一同粉碎，世界必定無法再同過去那般耀眼時...  故事就此開始">
+    <meta itemprop="name" content="Thrill.雷米爾.Ch01">
+    <meta itemprop="image" content="http://thrill-t3.com/Remiel/fbRemiel.jpg">
+    <meta itemprop="description" content="當璀璨的未來與自身一同粉碎，世界必定無法再同過去那般耀眼時...  故事就此開始">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
+    <!-- build:remove -->
+    <script src="scripts/localhostDependencies/libs.js"></script>
+    <!-- endbuild -->
+    <!-- build:css style/Remiel_ch01.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="stylesheets/ch01_main.css">
+    <link rel="stylesheet" href="stylesheets/gh-fork-ribbon.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4&appId=486598274806597";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/GoreStarry/Remiel_github">Fork me on GitHub</a>
+        </div>
+    </div>
+    <div class="loading">
+        <div class="relativeBox">
+            <div class="opBox opBoxR">
+                <div class="opBoxB opBoxBR"></div>
+            </div>
+            <div class="opBox opBoxL">
+                <div class="opBoxB opBoxBL"></div>
+            </div>
+            <div class="whiteline whitelineH"></div>
+            <div class="whiteline whitelineS"></div>
+            <div class="whiteline whitelineL"></div>
+            <div class="Mcircl McirclOut"></div>
+            <div class="Mcircl McirclIn"></div>
+            <div class="countDown">X</div>
+        </div>
+    </div>
+    <div id="frame">
+        <img class="title" id="title1" src="./images/title.png" />
+        <img class="title" id="title2" src="./images/title2.png" />
+        <img class="title" id="title3" src="./images/title3.png" />
+        <div id="logoa">
+            <div id="ink"></div>
+            <img class="LOGO2" id="LOGO2L" src="./images/thrill_LOGO_L.png" />
+            <img class="LOGO2" id="LOGO2M" src="./images/thrill_LOGO_M.png" />
+            <img class="LOGO2" id="LOGO2R" src="./images/thrill_LOGO_R.png" />
+            <img id="LOGO2b" src="./images/thrill_LOGO_b2.png" />
+        </div>
+        <div id="cus">
+            <img src="./images/ch01/cus.png" alt="">
+        </div>
+        <div id="pi">
+            <img id="cus2" src="./images/ch01/capel.png" />
+        </div>
+    </div>
+    <article id="article">
+        <div class="menu">
+            <img class="menuimg" src="./images/tools3.svg">
+            <ul>
+                <li class="save">儲存進度</li>
+                <li class="load">讀取進度</li>
+                <a href="../index.html">
+                    <li id="backHome">回首頁</li>
+                </a>
+            </ul>
+        </div>
+        <div class="paperS"></div>
+        <div class="bgLine" id="bgLineS"></div>
+        <div class="paperH"></div>
+        <div class="bgLine" id="bgLineH"></div>
+        <div id="bgLineMask"></div>
+        <div class="touch" id="touchN"></div>
+        <div class="touch" id="touchL"></div>
+        <div class="card tip">
+            <div class="tipRelative">
+                <div class="pcpaper"></div>
+                <div class="hole"></div>
+                <div class="rebon"></div>
+                <div class="key">
+                    <div>鍵盤</div>
+                    <div class="keypic keyb" id="keyup">↑</div>
+                    <div class="keypic keyb">←</div>
+                    <div class="keypic keyb">↓</div>
+                    <div class="keypic keyb">→</div>
+                </div>
+                <div class="or">or</div>
+                <div class="clicw">
+                    擊點螢幕
+                    <div class="pc clicLR">
+                        <div class="cc ccr">下一頁</div>
+                        <div class="cc ccl">上一頁</div>
+                    </div>
+                    <div class="pc pcb"></div>
+                </div>
+                <div class="know">KNOW!</div>
+            </div>
+        </div>
+        <!--        小說內文-->
+        <div class="page">
+            <div class="pageM">
+                <p>
+                    正當觀眾席上所有人都抬頭望向高空的時候．．．雖然沒有太多人注意到，一個高壯的漆黑的身影緩緩步上了白羽眼下的深淵盡頭。
+                </p>
+                <p>
+                    原已掌聲漸歇的底部樓層突然因為黑影的出現響起了某種與先前截然不同的歡喜驚叫。即使那馬上就被上頭又一陣如瀑的掌聲所蓋過，剩下的異音細小令人難以察覺。
+                </p>
+                <p>
+                    小小舞台上黑羽的主人為此揚起了嘴角
+                </p>
+                <br>
+                <p>
+                    因為他知道自己馬上就會讓這吵雜的空間再次陷入無限驚愕的寂靜之中．．．</p>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>巴別塔中激昂的掌聲與讚嘆聲由下而上層層竄起，幾乎形成一股推升白羽們的上升氣流。</p>
+                <p>事實上也確實如此，在空中飛舞的白羽們因為下方吹起的熱情精神變得更加集中，此刻半數的白羽已開始展開頂端空域的超長距離飛躍。</p>
+                <p>他們用誰也沒能望得的時機，在擺往星空的強風中深深吸氣，然後趁著空舞迴旋之際，在那頭下腳上的瞬間，「仰望」著「頭頂下」的深淵盡頭
+                </p>
+                <br>
+                <p>等待</p>
+                <p>等待某件或許會發生的事情</p>
+                <br>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>「就跟泥說是好位子吧！」羅南絲毫不顧忌他自身年紀，像小孩一樣興奮地叫出聲來，他將粗曠的拳頭放到盧維的頭旁硬是推了一拳。「那可是媽戲團首席之一的蘿絲啊！天國的米迦勒啊！」</p>
+                <p>盧維沒有回應。更沒理會那差點令自己頸部扭傷的一拳。</p>
+                <p>眼前。一個，又一個，令人眼花撩亂的身影像成群升空的雁群般不斷映照在盧維瞪大的雙瞳上。</p>
+                <p>一股無比陌生的感覺在心底翻騰著。一旁羅南好像在說著什麼，但他一個字也沒能聽進去。轟然的歡呼聲與掌聲由下方層層竄起，當升空的旋線尾端，最後一隻白羽飛越過盧維眼前時．．．</p>
+                <p>
+                    他覺得自己從長年無法擺脫的某種詛咒中被救贖了，晢伏的恐懼被一個個劃過眼前向上飛翔的天使所帶走，被那些閃現而過，或優雅的或傲慢笑容所征服了。</p>
+                <p>
+                    無需恐懼可能被「背叛」，腦中一股從未翻騰而出的陌生感受滾燙的滿溢了出來，這是他生平第一次能與常人一同享受眼前這番將風險昇華到極致的壯闊景色．．．</p>
+                <p>
+                    盧維不知不覺與同層所有觀眾一同奮力擊響自己的雙掌，最後他甚至與身旁的羅南一同忘了自己的年齡與尊嚴，朝著繼續翱翔升空的身姿發出了呼吼</p>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>下一刻她緩緩回頭，墜落，然後在下方不遠處，完美的，理所當然的，一把抓住下落軌跡上的一橫銀色，行雲流水的順勢甩動身姿，朝更高更遠的上空擺盪離去。
+                </p>
+                <p>
+                    <br> 此時恐懼已被笑容所攫走，獨留下幾根被風拍落的羽毛在空中輕輕落下
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>
+                    聽到羅南信誓旦旦回以這樣的答案，盧維終於咕嘟嚥下了口中的口水，同時深深吸了一口氣。</p>
+                <p>眼看著視線中不斷攀升放大的身影終於要將他蜇伏已久的恐懼喚出，一道輕盈的身影突然從他視野的角落一劃而上。他反射性的追上那道身影
+                </p>
+                <p>
+                    剎那間，身姿上下顛倒的兩人四目相交，白羽顫顫翱翔於空，望得她嫣然一笑
+                </p>
+                <p>
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>輝銀的鞦韆像個盡忠職守的僕從般，總是等候在看似隨意伸出的雙掌前，準備將緊握雙掌的主人送往更高的境界。</p>
+                <br>
+                <p>就這樣，眼下一個個白色的身影，他們於下落的擺盪間展現力量，在飛升的空舞時綻放優雅。力與美的空舞交錯讓蘆葦完全無暇意識到此情此景背後的危險性。</p>
+                <p>明明沿著空域外緣攀升便意味著他們繞行路徑將不斷放大，但只見他們身姿上下手掌開闔之間，一次次劃空飛舞的距離同時也變得越來越遠。</p>
+                <p>
+                    盧維好不容易才能從眼下的震撼中稍稍騰出一絲理智，思考一些現實性的問題。眼下既看不見安全網的存在，也完全沒能在他們單薄的身影上看見疑似安全措施的裝置，</p>
+                <p>
+                    （或許他們身上也有細著像鞦韆上那般的銀絲？）
+                </p>
+                <p>
+                    正當他這麼想，遠遠一個攀升的白羽就宛如要駁斥他的臆測般，在銀桿脫手的瞬間做出了一個足以將任何繫在他身上的細絲捆繞全身的多軸翻轉，徹底摧毀了盧維關於隱藏式安全繩存在的想法。
+                </p>
+                <p>
+                    「他們這樣．．．馬戲團一定有準備安全措施吧？」盧維忍不住靠向羅南的身邊問道，口氣難掩震驚「這不可能沒有吧？」
+                </p>
+                <p>
+                    「癟開玩笑！這可是史上最偉大的媽戲團啊！」有別於盧維的疑怯，羅南興奮的回答，過程一眼也沒望向盧維。
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>等待重力將他們再次攫獲</p>
+                <br>
+                <p>攫向那不偏不倚的等待</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>一開始因為距離過於遙遠，所以他沒有意識到這些白點驚人的攀升速度，但轉眼之間白色的形體竟已盤旋躍升了十多層樓高。看著逐漸放大不再是先前模糊白點的存在，盧維因為震驚，心臟稍稍被擠出了一絲酸楚。睜大的雙眼中映著一個個身覆白羽的身影，在空中驚人的擺盪飛躍著。
+                </p>
+                <br>
+                <p>
+                    上萬觀眾都屏息探望著眼下越來越清晰的點點白，一同奏著原本難以實現的靜謐，獨留下羽翼程翔的樂音將倒錐的空間給填滿。
+                </p>
+                <br>
+                <p>
+                    白羽個個憑藉著肌肉與關結的扭轉，再空中劃出一道道僅靠重力無法產生的冷冽下弧。</p>
+                <p>他們抓準那「錯過」便不會再誕生於世的「謹此唯一」，將壓縮在掌心中的力量瞬間釋放，無數擺脫重力的身姿便會優雅的在空中描繪出一道道短暫，卻又無比悠久的上弧線
+                </p>
+                <br>
+                <br>
+                <p>然後他們等待
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>「喂！」盧維的肩膀突然被粗魯的推了一下「荒什麼神！勘哪啊你！」發現盧維心不在焉的羅南低聲斥喝，「勘下面！精彩的要開始了！」</p>
+                <p>蘆葦不是滋味的癟了一下嘴，試圖慶幸既然是在如此「疏離」的狀況下，就算下面出了什麼大事，自己大概也無法接收到半分的實感吧．．．</p>
+                <p>意料之外的，當他試圖將注意力移回底下的那小點之前，視線就被途中的某種異狀給拉扯了住。</p>
+                <br>
+                <p>起初他以為有某種白色物體正在底層觀眾席間被上下拋接著。但那連串上下起伏的白色形體，無論體積大小、不穩定的形狀、甚至是規律起伏的路線都另盧維感到無比的違和感。</p>
+                <p>一個要再次將眉頭皺起的瞬間，他恍然大悟的睜大雙眼，也終於甘願的像所有人那般傾身朝底端中央舞台探去。果不其然，原先從舞台邊緣不斷登場竄出的白色身影如今竟已寥寥無幾的還環繞在舞台周圍，取而代之的是由無數躍動白點所連成的兩條虛線，正逐漸從底端舞台的邊緣延伸而出，凌空劃過了樂團，到達了底層的觀眾席上頭。</p>
+                <p>
+                    發現眼前的景象依舊如同缺漏碎片的拼圖，讓盧維還是皺起了眉頭。直到那一瞬間，他終於注意到無數若隱若現的閃亮銀絲正微微晃動在被燈光所填滿的空域中，一橫雕琢精美的銀桿恰巧緩緩落入了他的視線上方，他順著看上去，望見了一道由內而外，由下至上的天梯。</p>
+                <p>那最後一片拼圖，正是名為空中鞦韆的存在。</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>不過即使飄盪的音樂再棒？</p>
+                <p>舞台上表演的再怎麼精彩？</p>
+                <br>
+                <p>盧維不禁向上頭一環環正努力下探的觀眾看去。</p>
+                <br>
+                <p>他們究竟能看到什麼？</p>
+                <p>又期望能看到什麼？</p>
+                <br>
+                <p>又或著粉絲的盲目果真是荒唐的令他難以想像．．．？</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>
+                    更巨大的一聲「啪瘩！」在上方炸響，數十道光柱由寬闊的塔頂同時被點亮，不過盧維沒能再像先前那樣清晰看見其他觀眾的身影，取而代之的底下舞台被匯聚的光線打的閃閃發亮。射下的光柱斜斜匯聚在舞台的正中央，宛如在倒錐狀的巨塔中插入了一個巨大的光錐。</p>
+                <p>悠揚的樂聲迴盪了起來，盧維要傾身才能瞄見點點人影正從明亮的舞台邊緣一一奔出。果不其然，縱使在光線照耀下能微微看見他們閃閃發亮的身姿</p>
+                <p>但那人影的大小未免也太令人絕望．．．</p>
+                <p>盧維沒有像其他觀眾那般繼續緊盯在下方那小小的舞台上。意興闌珊的他反倒將注意力給移到了舞台外緣，他發現那一環原先以為是豪華貴賓席的區塊，此時正閃動著點點金亮。</p>
+                <p>與四面八方恣意晃動的觀眾身影不同，那群閃爍金點帶著一種著整齊劃一的突兀感，於是他瞇眼一瞧，才發現在那坐著的並非觀眾，而是無數的樂手。那些金點其實是舞台強光反射在他們手上樂器所綻出的點點輝光。</p>
+                <p>盧維又再度困惑的皺起眉頭，無法理解為何將最接近舞台的位子給了樂團，反倒將觀眾抬離舞台如此距離的高度。雖然他得承認樂團奏出的樂聲出乎意料的美妙，由椎塔底奏起的樂聲似乎有著擴音的效果，與由音響播放的效果不同，巨大的空間中迴盪著樂團飽足且有生命力的旋律。</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>這件事即使現在回想起來依舊令盧維又羞又愧。</p>
+                <p>雖然如今年過三十的他已不可能再被這樣的表演給嚇哭，不過這件事情所象徵的本質卻從未隨著他的年齡增長而有所改變。</p>
+                <p>與運用障眼法暗中迴避危險的魔術表演不同，以正面挑戰危險來取悅觀眾的特技表演，對於會過度將他人處境朝自身投影的盧維而言，簡直就是一場身歷其境的折磨。</p>
+                <p>縱使表演總是畫上完美的句點，對他來說這一切也不是煙火那般由零起飛的感官享受，而僅是一次又一次由負歸零的解脫罷了。</p>
+                <p>膽小？或許吧，總之他就是無法理解那種逾越危險所帶來的愉悅．．．</p>
+                <p>
+                    所以縱使天國馬戲團的價值足以與這個國度直接畫上等號，在他眼中，那也不過是種名牌性質的存在。他可是絲毫無法，也沒有興趣去理解這個名牌的價值所在．．．
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>或許用天分來形容這種事情有些奇怪，不過事實便是如此。</p>
+                <p>正當全世界都把馬戲團看待成是一種崇高的藝術文化，無論商業或藝術工作者都將馬戲團的舞台視為大展長才的最佳機會。在這家家戶戶都難免收藏著一兩本經典演出名冊的當代，唯獨只有他，就像是個會對馬戲團呈現過敏反應般的突兀存在。</p>
+                <br>
+                <p>他憶起自己小的時候還曾牽著父母的手去看過馬戲團的演出，所謂初嘗的刺激總是令人記憶猶新，那甚至成為了他在那年紀還唯一保留的記憶。</p>
+                <p>那不是個像天國馬戲團這般世界級的頂尖存在，只是個小有口碑，在各城鎮間不斷遊走的巡迴馬戲團。盧維清晰記得身褐色的大帳中，男子一身黑皮勁裝立於中央。表演過程他就像是一個樂團的指揮，而在場所有觀眾都是他的樂器。每當他手起手落，全場便會交織出陣陣的驚嘆聲。</p>
+                <p>明明雙眼被蒙著厚厚的黑布，從他手中射出的每一刀都是精準無比的「噠！」一聲，刺入美麗助手肌膚相隔毫米的木板上。</p>
+                <p>事實上他至始至終沒失手。不過當飛刀手將刀林中美麗的助手牽下，在場所有人都準備施予熱烈掌聲的瞬間，唯獨自己因為從極端緊繃的恐懼之中解脫，而放聲大哭了起來。</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>盧維與全場觀眾一同落入因光線反差所誕生的混沌之中，縱使是近在咫尺的羅南，此時在盧維眼前都只剩下縹緲的輪廓還在黑暗中浮沉著。盧維並沒有錯過這個收起禮貌性微笑的機會，讓嘴角能配合此刻真正的心情掉落下來。</p>
+                <br>
+                <p>盧維自認在這社會上是個很普通的人。不過這麼說並非是要敘述自己的平庸，只是如果把世界上每個人都比做為不同色調的馬賽克的話，那在「社會」這幅由眾多馬賽克所構成的巨型壁畫上，自己並不是那種會與四周相顯突兀的馬賽克。</p>
+                <p>他從小成績不錯，人緣也一直很好，做事堪稱出色，一切都十分正常。但就唯獨一件事情，讓他感覺自己就好像是顆逆行於全世界洪流的石子</p>
+                <p>純白畫板上那唯一一顆突兀的紅點．．．</p>
+                <br>
+                <p>剛飛抵這裏的第一天，合作工廠的老闆便盛情表示將招待自己觀賞最負盛名的天國馬戲團表演。而對於自己把這項招待下意識的當成是工作，他其實完全不感驚訝，甚至是理所當然。</p>
+                <p>因為盧維在這生命中唯一與世界逆行之事，就是他實在沒有欣賞特技表演的天分．．．</p>
+                <br>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>「這好像和你們說的不一樣呢！」為了掩飾自己突兀露出的苦笑，盧維趕緊甩了甩手中閃閃發亮的鑲金票根，說：「這位置根本看不見舞台上的人吧？」由於是硬擠出的玩笑話，盧維直到脫口後才意識到頭上可是還有十多層的觀眾席，而且滿滿是人。</p>
+                <p>由於這是一個高聳的倒椎狀劇場，高度越高，每層觀眾的席位反而也會隨著環徑的加大而不斷加倍。他皺起眉頭，心想如果連自己都看不清楚了，上頭那更大一票觀眾又是打算看些什麼呢？</p>
+                <p>困惑中一旁羅南反倒是對剛才那番抱怨噗哧一笑。</p>
+                <p>「你老大是當真沒看過天國馬戲團的表演？？ 直播？？ 或．．．或是錄影？？」</p>
+                <p>盧維這才發現話題不僅轉移不成，反倒還搓到了自己的痛處。原本他還想稍稍辯解，但最後還是放棄掙扎的點了點頭。</p>
+                <p>「難以置信呢．．．」羅南驚訝的說：「我從來沒遇過外國人這輩子沒看過我們馬戲團的表演呢，不是全世界都會直播的嗎？你們國家一定也有吧？」</p>
+                <p>「我錯過了．．．」</p>
+                <p>「每一年都？」話還沒說完，一連串啪瘩！啪瘩！的巨響從他們的頭頂上打了下來，打斷了羅南的困惑。</p>
+                <p>兩人與全場上萬的觀眾一同抬起了頭，看見原本瀑灑在觀眾頭上的數十道金光正隨著聲聲巨響逆時針逐一收起。</p>
+                <p>盧維對於一旁羅南停止追問而偷偷鬆了口氣，若有所思的看著眼前那些原本在光線下閃動的無數身影逐漸消失在一道道劃下的黑暗之中</p>
+                <br>
+                <p>
+                    直到最後自己頂上也傳出了一那聲．．． 啪瘩！
+                </p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pageM">
+                <p>「怎麼樣？很壯觀吧！」一旁代表公司招待自己的羅南，正宛如炫耀自己兒女般地從他糾結的大鬍子後頭露出發黃的笑容。</p>
+                <p>這幾天作為盧維的嚮導，羅南總是以一口不甚道地的口音說著盧維的母語。接著他似乎是在腦中翻找適當的詞彙似的，停頓了好一陣子才又笑著開口</p>
+                <p>「啊~不過你還真是．．．拘謹呢~」</p>
+                <p>盧維對此困惑的揚起了雙眉。</p>
+                <p>羅南用食指勾了勾身上T-shirt的領口，再朝盧維身上指了指。順勢一看的盧維，這才意識到自己大概是這個碩大空間中極少數穿著西裝的觀眾。對於自己下意識就把公司招待的活動當作是工作，盧維不禁露出了苦笑。</p>
+                <p>下午提早結束技術指導工作回到飯店的他，竟然完全沒有有萌生換裝赴約的想法。</p>
+                <p>（馬戲團啊．．．） 他心想</p>
+                <br>
+                <p>把它看成是工作或許還是太過親切了．．．</p>
+            </div>
+        </div>
+        <div class="page" id="page0">
+            <div class="pageM">
+                <p>碩大的空間中，叢叢觀眾的身影如同無法安分的蟻群般，閃動在這由下而上環環放大的陡坡式觀眾席上，另這座豎立在幽暗樹海中的倒椎狀巨塔不斷迴盪出海潮般的吵雜。</p>
+                <p>一路依循導引通過層層關卡的盧維，總忍不住一再仰頭環視這令人眩惑空間，畢竟這是他人生頭一次遇上觀眾席要比舞台更加壯觀的劇場。</p>
+                <br>
+                <p>最終抵達高位樓層座位的他第一件事當然就是傾身朝下頭探去。</p>
+                <p>明明實際約莫只有二十層樓的高度，但眼下不斷環環內縮的樓層卻會令人產生一種萬丈深淵的錯覺，感覺自己會一不小心被吸入一般。</p>
+                <p>而就在那這眩惑深淵的最底部，有著一個看來約莫兩口勘能塞進嘴中的可憐小餅。盧維當下不自覺的嚥了口口水，</p>
+                <br>
+                <p>那顯然正是此次表演的中央舞台。</p>
+            </div>
+        </div>
+        <!--        -->
+        <div class="card bCard">
+            <div class="pcpaper"></div>
+            <div class="hole"></div>
+            <div class="rebon"></div>
+            <div class="cardtext">THRILL</div>
+            <div class="cardtext cardtext2">SAVED</div>
+        </div>
+    </article>
+    <div class="under">
+        <div class="udMho">
+            <a id="nextChapter" href="ch02.html">
+                <div class="udMhoho">
+                    <div class="udMt">下一章</div>
+                    <div class="udMi"></div>
+                </div>
+            </a>
+        </div>
+        <div class="udMho">
+            <div class="udMhoho">
+                <div class="udMt share">分享</div>
+                <div class="udMi"></div>
+            </div>
+        </div>
+        <div class="udMho">
+            <div class="udMhoho">
+                <div class="udMt callSti">留言</div>
+                <div class="udMi"></div>
+            </div>
+        </div>
+        <div id="FBbox">
+            <div class="fb-page" data-href="https://www.facebook.com/thrill.t3" data-width="212px" data-small-header="true" data-adapt-container-width="false"
+                data-hide-cover="false" data-show-facepile="false" data-show-posts="false">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/thrill.t3"><a href="https://www.facebook.com/thrill.t3">Thrill 故事集</a></blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="shareB">
+            <ul class="soc">
+                <li>
+                    <a id="fbShare" href="">
+                        <img class="soc-line" src="./images/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a id="lineShare" href="">
+                        <img class="soc-line" src="./images/line.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a id="twitterShare" class="soc-icon-last" href="">
+                        <img class="soc-line" src="./images/twitter.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sticker">
+            <div class="sticker2"></div>
+            <div class="kickstick"></div>
+            <form class="formS" action="message.php" method="post">
+                <textarea id="textStick" name="comment" cols="30" rows="10" placeholder="歡迎點此留下任何意見..."></textarea>
+                <div class="name">Ｎａｍｅ：
+                    <input class="formName" name="name" type="text">
+                </div>
+                <input class="formSub" type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+    <!-- build:js scripts/Remiel_c01.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../bower_components/jquery.preload/jquery.preload.min.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="scripts/ch01.js"></script>
+    <script src="scripts/message.js"></script>
+    <script src="scripts/remiel.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66808019-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/**
+* @author      Taylor Wang  <sunrise91.t3@gmail.com>
+* @copyright   Copyright (c) 2015 Taylor Wang Design
+*/
+/* line 6, ../../sass/ch02/ch02_all.scss */
+#frame {
+  background-image: url(../images/ch02/bbuLight.jpg);
+}
+
+/* line 10, ../../sass/ch02/ch02_all.scss */
+.under {
+  background-image: url(../images/ch02/ptcTower.jpg);
+}
+
+/* line 14, ../../sass/ch02/ch02_all.scss */
+#bb,
+.title {
+  height: 100%;
+}
+
+/* line 19, ../../sass/ch02/ch02_all.scss */
+#bb {
+  -webkit-transform-origin: 65% bottom;
+  -ms-transform-origin: 65% bottom;
+  transform-origin: 65% bottom;
+}
+
+/* line 25, ../../sass/ch02/ch02_all.scss */
+.bbFly {
+  -webkit-transform-origin: 65% bottom;
+  -ms-transform-origin: 65% bottom;
+  transform-origin: 65% bottom;
+  -webkit-animation: flyhigh 60s cubic-bezier(0.03, 0.63, 0.03, 0.74) forwards;
+  animation: flyhigh 60s cubic-bezier(0.03, 0.63, 0.03, 0.74) forwards;
+}
+
+@-webkit-keyframes flyhigh {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+@keyframes flyhigh {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}

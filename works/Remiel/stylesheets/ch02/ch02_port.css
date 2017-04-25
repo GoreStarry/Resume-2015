@@ -1,0 +1,15 @@
+/**
+* @author      Taylor Wang  <sunrise91.t3@gmail.com>
+* @copyright   Copyright (c) 2015 Taylor Wang Design
+*/
+/* line 6, ../../sass/ch02/ch02_port.scss */
+#bb {
+  position: relative;
+  left: -90%;
+  transform-origin: 65% bottom;
+}
+
+/* line 12, ../../sass/ch02/ch02_port.scss */
+#frame {
+  background-position: 60% center;
+}
